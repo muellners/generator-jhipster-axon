@@ -1,0 +1,10 @@
+{
+  "generator-jhipster-blueprint": {
+    "promptValues": {
+      "githubName": "maektwain",
+      "authorName": "Saransh Sharma",
+      "authorEmail": "saransh@muellners.org",
+      "authorUrl": "https://saranshsharma.me"
+    }
+  }
+}
