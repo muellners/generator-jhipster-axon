@@ -1,13 +1,13 @@
 {
   "name": "generator-jhipster-axon",
   "version": "0.0.0",
-  "description": "Integrating axon based module in existing financial application ",
+  "description": "JHipster blueprint, Integrating axon based module in existing finscale application",
   "keywords": [
     "yeoman-generator",
     "jhipster-blueprint",
     "jhipster-5"
   ],
-  "homepage": "https://github.com/maektwain/generator-jhipster-axon",
+  "homepage": "https://github.com/muellners/generator-jhipster-axon",
   "author": {
     "name": "Saransh Sharma",
     "email": "saransh@muellners.org",
@@ -19,7 +19,7 @@
   "main": "generators/app/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maektwain/generator-jhipster-axon.git"
+    "url": "git+https://github.com/muellners/generator-jhipster-axon.git"
   },
   "dependencies": {
     "chalk": "2.4.1",
@@ -53,8 +53,8 @@
     "release:minor": "npm version minor -a -m \"Update to %s\" && npm run release",
     "release:major": "npm version major -a -m \"Update to %s\" && npm run release"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maektwain/generator-jhipster-axon/issues"
+    "url": "https://github.com/muellners/generator-jhipster-axon/issues"
   }
 }

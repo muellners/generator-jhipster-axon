@@ -1,30 +1,23 @@
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
-const ServerGenerator = require('generator-jhipster/generators/server');
+const EntityServerGenerator = require('generator-jhipster/generators/entity-server');
 
-module.exports = class extends ServerGenerator {
+module.exports = class extends EntityServerGenerator {
     constructor(args, opts) {
         super(args, { fromBlueprint: true, ...opts }); // fromBlueprint variable is important
 
-        const jhContext = (this.jhipsterContext = this.options.jhipsterContext);
-
-        if (!jhContext) {
+        if (!this.jhipsterContext) {
             this.error(
                 `This is a JHipster blueprint and should be used only like ${chalk.yellow(
                     'jhipster --blueprint generator-jhipster-blueprint'
                 )}`
             );
         }
-
-        this.configOptions = jhContext.configOptions || {};
-
-        // This sets up options for this sub generator and is being reused from JHipster
-        jhContext.setupServerOptions(this, jhContext);
     }
 
     get initializing() {
         /**
-         * Any method beginning with _ can be reused from the superclass `ServerGenerator`
+         * Any method beginning with _ can be reused from the superclass `EntityServerGenerator`
          *
          * There are multiple ways to customize a phase from JHipster.
          *

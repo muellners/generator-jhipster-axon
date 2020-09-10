@@ -1,12 +1,16 @@
 const path = require('path');
+const fse = require('fs-extra');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('Subgenerator server of generator-jhipster-blueprint JHipster blueprint', () => {
+describe('Subgenerator app of generator-jhipster-blueprint JHipster blueprint', () => {
     describe('Sample test', () => {
         before(done => {
             helpers
-                .run('generator-jhipster/generators/server')
+                .run('generator-jhipster/generators/app')
+                .inTmpDir(dir => {
+                    fse.copySync(path.join(__dirname, '../test/templates/ngx-blueprint'), dir);
+                })
                 .withOptions({
                     'from-cli': true,
                     skipInstall: true,
@@ -15,9 +19,9 @@ describe('Subgenerator server of generator-jhipster-blueprint JHipster blueprint
                 })
                 .withGenerators([
                     [
-                        require('../generators/server'), // eslint-disable-line global-require
-                        'jhipster-generator-jhipster-blueprint:server',
-                        path.join(__dirname, '../generators/server/index.js')
+                        require('../generators/app'), // eslint-disable-line global-require
+                        'jhipster-generator-jhipster-blueprint:app',
+                        path.join(__dirname, '../generators/app/index.js')
                     ]
                 ])
                 .withPrompts({

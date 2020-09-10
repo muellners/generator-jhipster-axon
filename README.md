@@ -1,6 +1,6 @@
 # generator-jhipster-axon
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> JHipster blueprint, Integrating axon based module in existing finscale application 
+> JHipster blueprint, JHipster blueprint, Integrating axon based module in existing finscale application
 
 # Introduction
 
@@ -19,13 +19,13 @@ As this is a [JHipster](https://www.jhipster.tech/) blueprint, we expect you hav
 To install this blueprint:
 
 ```bash
-npm install -g generator-jhipster-axon
+npm install -g generator-jhipster-generator-jhipster-blueprint
 ```
 
 To update this blueprint:
 
 ```bash
-npm update -g generator-jhipster-axon
+npm update -g generator-jhipster-generator-jhipster-blueprint
 ```
 
 ## With Yarn
@@ -33,13 +33,13 @@ npm update -g generator-jhipster-axon
 To install this blueprint:
 
 ```bash
-yarn global add generator-jhipster-axon
+yarn global add generator-jhipster-generator-jhipster-blueprint
 ```
 
 To update this blueprint:
 
 ```bash
-yarn global upgrade generator-jhipster-axon
+yarn global upgrade generator-jhipster-generator-jhipster-blueprint
 ```
 
 # Usage
@@ -47,7 +47,7 @@ yarn global upgrade generator-jhipster-axon
 To use this blueprint, run the below command
 
 ```bash
-jhipster --blueprint axon
+jhipster --blueprint generator-jhipster-blueprint
 ```
 
 
@@ -60,7 +60,7 @@ During development of blueprint, please note the below steps. They are very impo
 Note: If you do not want to link the blueprint(step 3) to each project being created, use NPM instead of Yarn as yeoman doesn't seem to fetch globally linked Yarn modules. On the other hand, this means you have to use NPM in all the below steps as well.
 
 ```bash
-cd axon
+cd generator-jhipster-blueprint
 npm link
 ```
 
@@ -72,7 +72,7 @@ You could also use Yarn for this if you prefer
 cd generator-jhipster
 npm link
 
-cd axon
+cd generator-jhipster-blueprint
 npm link generator-jhipster
 ```
 
@@ -81,21 +81,21 @@ npm link generator-jhipster
 ```bash
 mkdir my-app && cd my-app
 
-npm link generator-jhipster-axon
+npm link generator-jhipster-generator-jhipster-blueprint
 npm link generator-jhipster (Optional: Needed only if you are using a non-released JHipster version)
 
-jhipster -d --blueprint axon
+jhipster -d --blueprint generator-jhipster-blueprint
 
 ```
 
 # License
 
-Apache-2.0 © [Saransh Sharma](https://saranshsharma.me)
+MIT © [Saransh Sharma](https://saranshsharma.me)
 
 
-[npm-image]: https://img.shields.io/npm/v/generator-jhipster-axon.svg
-[npm-url]: https://npmjs.org/package/generator-jhipster-axon
-[travis-image]: https://travis-ci.org/maektwain/generator-jhipster-axon.svg?branch=master
-[travis-url]: https://travis-ci.org/maektwain/generator-jhipster-axon
-[daviddm-image]: https://david-dm.org/maektwain/generator-jhipster-axon.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/maektwain/generator-jhipster-axon
+[npm-image]: https://img.shields.io/npm/v/generator-jhipster-generator-jhipster-blueprint.svg
+[npm-url]: https://npmjs.org/package/generator-jhipster-generator-jhipster-blueprint
+[travis-image]: https://travis-ci.org/maektwain/generator-jhipster-generator-jhipster-blueprint.svg?branch=master
+[travis-url]: https://travis-ci.org/maektwain/generator-jhipster-generator-jhipster-blueprint
+[daviddm-image]: https://david-dm.org/maektwain/generator-jhipster-generator-jhipster-blueprint.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/maektwain/generator-jhipster-generator-jhipster-blueprint

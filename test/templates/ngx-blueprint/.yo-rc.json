@@ -1,5 +1,5 @@
 {
-    "generator-jhipster-axon": {
+    "generator-jhipster-generator-jhipster-blueprint": {
         "promptValues": {
             "packageName": "com.mycompany.myapp"
         },
@@ -43,6 +43,6 @@
             "en",
             "fr"
         ],
-        "blueprint": "generator-jhipster-axon"
+        "blueprint": "generator-jhipster-generator-jhipster-blueprint"
     }
 }

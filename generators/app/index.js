@@ -1,8 +1,8 @@
 /* eslint-disable consistent-return */
 const chalk = require('chalk');
-const ServerGenerator = require('generator-jhipster/generators/server');
+const AppGenerator = require('generator-jhipster/generators/app');
 
-module.exports = class extends ServerGenerator {
+module.exports = class extends AppGenerator {
     constructor(args, opts) {
         super(args, { fromBlueprint: true, ...opts }); // fromBlueprint variable is important
 
@@ -17,14 +17,11 @@ module.exports = class extends ServerGenerator {
         }
 
         this.configOptions = jhContext.configOptions || {};
-
-        // This sets up options for this sub generator and is being reused from JHipster
-        jhContext.setupServerOptions(this, jhContext);
     }
 
     get initializing() {
         /**
-         * Any method beginning with _ can be reused from the superclass `ServerGenerator`
+         * Any method beginning with _ can be reused from the superclass `AppGenerator`
          *
          * There are multiple ways to customize a phase from JHipster.
          *
